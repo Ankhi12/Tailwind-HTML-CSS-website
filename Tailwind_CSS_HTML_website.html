@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #000000dd; color: white; }
+    .glass { background: rgba(159, 150, 150, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+  </style>
+  <script>
+    tailwind.config = { 
+  theme: {
+    extend: {
+      animation: {
+        'scroll': 'scroll 20s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-20%)' }
+        }
+      }
+    }
+  }
+}
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-4xl">
+  <div class="glass rounded-full px-6 py-4 flex justify-between items-center">
+    <div class="text-xl font-black tracking-tighter italic">RUNENJOY.</div>
+    <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+      <a href="#" class="hover:text-white transition">Explore</a>
+      <a href="#" class="hover:text-white transition">Training</a>
+      <a href="#" class="hover:text-white transition">Community</a>
+    </div>
+    <button class="bg-white text-black px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest">Get App</button>
+  </div>
+</nav>
+
+<section class="relative pt-40 pb-20 px-6 overflow-hidden">
+  <div class="absolute top-0 right-0 w-[930px] h-[500px] bg-indigo-600/20 blur-[50px] -z-10"></div>
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="text-indigo-400 font-bold tracking-widest uppercase text-xs">A high-energy runners club</span>
+      <h1 class="text-7xl md:text-8xl font-black mt-4 leading-[0.9] tracking-tighter">
+        CONQUER <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">THE LAZY.</span>
+      </h1>
+      <p class="text-gray-400 mt-6 text-lg max-w-md">Find new trails, join the community, and stay active.</p>
+    
+    </div>
+
+    <div class="relative flex justify-center">
+        <img src="https://images.unsplash.com/photo-1766970096320-c62c49517226?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-full w-full object-cover opacity-60 rounded-3xl">
+         <div class="absolute bottom-20 left-6 right-6 glass p-4 rounded">
+            <p class="text-[10px] uppercase text-indigo-300 text-center">Current Heart Rate</p>
+            <p class="text-2xl font-bold text-center">142 BPM</p>
+         </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="max-w-6xl mx-auto px-6 py-20">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="glass p-8 rounded-3xl text-center">
+      <h3 class="text-3xl font-bold">2k</h3>
+      <p class="text-gray-500 text-sm">Active Runners</p>
+    </div>
+    <!-- Repeat for other stats -->
+
+    <div class="glass p-8 rounded-3xl text-center bg-slate-100">
+      <h3 class="text-3xl font-bold text-black">6</h3>
+      <p class="text-black text-sm">Locations</p>
+    </div>
+    <!-- Repeat for other stats -->
+
+    <div class="glass p-8 rounded-3xl text-center">
+      <h3 class="text-3xl font-bold">25</h3>
+      <p class="text-gray-500 text-sm">Active Events</p>
+    </div>
+    <!-- Repeat for other stats -->
+
+    <div class="glass p-8 rounded-3xl text-center bg-slate-100">
+      <h3 class="text-3xl font-bold text-black">10</h3>
+      <p class="text-black text-sm">Coaches</p>
+    </div>
+    
+  </div>
+</section>
+
+
+
+<!-- Runner's Cards-->
+<div class="relative overflow-hidden w-full  py-10">
+  <p class="text-center text-3xl uppercase font-bold pb-20"> Runner's Moments</p>
+  <div class="flex w-max animate-scroll hover:[animation-play-state:paused]">
+        <div class="flex gap-8">
+      <div class="w-72 shrink-0 h-96 bg-slate-800 rounded-[2rem] overflow-hidden relative">
+        <img src="https://images.unsplash.com/photo-1716237442777-dbcb2d69a0aa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 p-6 bg-gradient-to-t from-black w-full"><p class="text-white font-black italic uppercase">Alex Rivers</p></div>
+      </div>
+
+      <div class="w-72 shrink-0 h-96 bg-slate-800 rounded-[2rem] overflow-hidden relative">
+        <img src="https://images.unsplash.com/photo-1567856539622-15401a9e8317?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 p-6 bg-gradient-to-t from-black w-full"><p class="text-white font-black italic uppercase">Mohd.</p></div>
+      </div>
+
+
+      <div class="w-72 shrink-0 h-96 bg-slate-800 rounded-[2rem] overflow-hidden relative">
+        <img src="https://images.unsplash.com/photo-1511389571644-a2550b195566?q=80&w=1239&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 p-6 bg-gradient-to-t from-black w-full"><p class="text-white font-black italic uppercase">Jonathan</p></div>
+      </div>
+
+      <div class="w-72 shrink-0 h-96 bg-slate-800 rounded-[2rem] overflow-hidden relative">
+        <img src="https://images.unsplash.com/photo-1509833903111-9cb142f644e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cnVubmluZyUyMHdvbWFufGVufDB8fDB8fHww" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 p-6 bg-gradient-to-t from-black w-full"><p class="text-white font-black italic uppercase">Georgia</p></div>
+      </div>
+
+      <div class="w-72 shrink-0 h-96 bg-slate-800 rounded-[2rem] overflow-hidden relative">
+        <img src="https://images.unsplash.com/photo-1594911772125-07fc7a2d8d9f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cnVubmluZyUyMHdvbWFufGVufDB8fDB8fHww" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 p-6 bg-gradient-to-t from-black w-full"><p class="text-white font-black italic uppercase">Penalophe</p></div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+<!--Footer-->
+<div class="w-24 h-1 bg-white/70 rounded-full my-4 mx-auto"></div>
+<div class="flex gap-8 items-center justify-center pt-4 pb-8">
+    <div class="flex gap-1.5">
+        <i data-lucide="mail" class="w-5 h-5"></i>example@abc.com
+    </div>
+
+    <div class="flex gap-1.5">
+        <i data-lucide="phone" class="w-5 h-5"></i>123456789
+    </div>
+
+    <div class="flex gap-1.5">
+        <i data-lucide="map-pin" class="w-5 h-5"></i>Earth
+    </div>
+    
+</div>
+
+<script>
+    lucide.createIcons()
+</script>
+<body>
